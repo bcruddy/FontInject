@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FontInject Demo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <style>
+        .blackout-2am { font-family: "Blackout 2am"; }
+        .butcherman { font-family: "Butcherman"; }
+        .cookie { font-family: "cookie"; }
+        .salsa { font-family: "salsa"; display: none; }
+    </style>
+</head>
+<body>
+<div class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>FontInject demo</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Examples</h2>
+            <ul>
+                <li><h3 class="blackout-2am">Blackout 2am</h3></li>
+                <li><h3 class="cookie">Cookie</h3></li>
+                <li><h3 class="butcherman">Butcherman</h3></li>
+            </ul>
+        </div>
+        <div class="col-md-8">
+            <h2>Lazy Loading</h2>
+            <p>FontInject allows you to inject as many fonts as your users may need and only the fonts they need.</p>
+            <p>Open up the console, go to the network tab and sort requests to "Font", then click <a onclick="show('.salsa')">here</a> to reveal another example and you'll see the request is only made when its necessary.</p>
+            <h3 class="salsa">Salsa was lazy loaded!</h3>
+        </div>
+    </div>
+</div>
+
+<script src="/dist/font-inject.js"></script>
+<script>
+    var fontDirPath = '/demo/fonts/';
+    var fi = new FontInject(fontDirPath);
+
+    var fontList = [{
+        filename: 'Blackout-2am.ttf',
+        family: 'Blackout 2am'
+    }, {
+        filename: 'Butcherman-Regular.ttf',
+        family: 'Butcherman'
+    }, {
+        filename: 'Cookie-Regular.ttf',
+        family: 'Cookie'
+    }, {
+        filename: 'Dorsa-Regular.ttf',
+        family: 'Dorsa'
+    }, {
+        filename: 'Salsa-Regular.ttf',
+        family: 'Salsa'
+    }];
+
+    fi.injectAll(fontList);
+
+    function show(selector) {
+        var el = document.querySelector(selector);
+        el.style.display = el.style.display == 'block' ? 'none' : 'block';
+    }
+
+</script>
+</body>
+</html>
