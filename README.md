@@ -28,6 +28,8 @@ fi.injectAll(fontList);
 
 ```
 
+To run the demo, clone the repository and run `python -m SimpleHTTPServer` from the room directory, then navigate to http://localhost:8000/demo
+
 ##License
 Do whatever you want with it under the [MIT license](https://github.com/bcruddy/FontInject/LICENSE.md).
 
