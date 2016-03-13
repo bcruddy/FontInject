@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>FontInject Demo</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <style>
         .blackout-2am { font-family: "Blackout 2am"; }
         .butcherman { font-family: "Butcherman"; }
@@ -16,7 +17,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1>FontInject demo</h1>
+                <h1 class="text-right">font-inject.js</h1>
             </div>
         </div>
     </div>
@@ -41,11 +42,21 @@
     </div>
 </div>
 
+<footer class="container-fluid" style="background-color: #CCC; position: fixed; bottom: 0; left: 0; right: 0; padding-top: 20px; padding-bottom: 20px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li><a href="https://github.com/bcruddy/fontinject" target="_blank" style="color: #000;"><i class="fa fa-2x fa-github"></i></a></li>
+                    <li><a href="https://twitter.com/bcruddy" target="_blank"><i class="fa fa-2x fa-twitter"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
 <script src="/dist/font-inject.js"></script>
 <script>
-    var fontDirPath = '/demo/fonts/';
-    var fi = new FontInject(fontDirPath);
-
     var fontList = [{
         filename: 'Blackout-2am.ttf',
         family: 'Blackout 2am'
@@ -63,7 +74,11 @@
         family: 'Salsa'
     }];
 
+    var fontDirPath = '/demo/fonts/';
+    var fi = new FontInject(fontDirPath);
+
     fi.injectAll(fontList);
+
 
     function show(selector) {
         var el = document.querySelector(selector);

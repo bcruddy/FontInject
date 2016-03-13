@@ -1,22 +1,27 @@
 #Usage
 ```javascript
 
-var fontlist = [{ 
-		filename: 'CustomFont.tff', 
-		family: 'Custom Font SC' 
-	}, {	 
-		filename: 'CustomFont-Two.tff', 
-		family: 'Custom Font Two SC' 
-	}];
+    var fontList = [{
+            filename: 'Blackout-2am.ttf',
+            family: 'Blackout 2am'
+        }, {
+            filename: 'Butcherman-Regular.ttf',
+            family: 'Butcherman'
+        }, {
+            filename: 'Cookie-Regular.ttf',
+            family: 'Cookie'
+        }, {
+            filename: 'Dorsa-Regular.ttf',
+            family: 'Dorsa'
+        }, {
+            filename: 'Salsa-Regular.ttf',
+            family: 'Salsa'
+        }];
+        
+    var fontDirPath = '/path/to/fonts/';
+    var fi = new FontInject(fontDirPath);
 
-var fontDirPath = '/path/to/font/files/';
-var fi = new FontInject(fontDirPath);
-	
-var fonts = fi.injectAll(fontlist);
-
-// OR
-
-fi.injectAll(fontlist);
+    fi.injectAll(fontList);
 
 ```
 
