@@ -6,6 +6,7 @@
 class Font {
   family:string;
   filename:string;
+  weight:number = 400;
 }
 
 class FontInject {
@@ -40,7 +41,7 @@ class FontInject {
   getFontRule(font:Font):string {
     let fontPath = this.rootPath + font.filename;
 
-    return '@font-face { src: url(' + fontPath + '); font-family: "' + font.family + '"; }';
+    return '@font-face { src: url(' + fontPath + '); font-family: "' + font.family + '"; font-weight: ' + font.weight + ' }';
   }
 
   static generateStyleSheet():CSSStyleSheet {
