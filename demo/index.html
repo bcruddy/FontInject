@@ -36,7 +36,9 @@
         <div class="col-md-8">
             <h2>Basic Usage</h2>
             <pre>
-            var fontList = [{
+    &lt;script src="/path/to/font-inject.js"&gt;&lt;/script&gt;
+    &lt;script&gt;
+        var fontList = [{
                 filename: 'Blackout-2am.ttf',
                 family: 'Blackout 2am'
             }, {
@@ -53,8 +55,9 @@
                 family: 'Salsa'
             }];
 
-            var fi = new FontInject('/path/to/fonts/');
-            fi.injectAll(fontList);
+        var fi = new FontInject('/path/to/fonts/');
+        fi.injectAll(fontList);
+    &lt;/script&gt;
             </pre>
             <hr />
             <h2>Lazy Loading</h2>
