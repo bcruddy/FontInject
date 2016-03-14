@@ -1,34 +1,7 @@
 #font-inject.js
 With font-inject.js you can allow your users to access hundreds of different fonts on demand without preloading all of them.
 
-##Usage
-```javascript
-
-var fontList = [{
-        filename: 'Blackout-2am.ttf',
-        family: 'Blackout 2am'
-    }, {
-        filename: 'Butcherman-Regular.ttf',
-        family: 'Butcherman'
-    }, {
-        filename: 'Cookie-Regular.ttf',
-        family: 'Cookie'
-    }, {
-        filename: 'Dorsa-Regular.ttf',
-        family: 'Dorsa'
-    }, {
-        filename: 'Salsa-Regular.ttf',
-        family: 'Salsa'
-    }];
-    
-var fontDirPath = '/path/to/fonts/';
-var fi = new FontInject(fontDirPath);
-
-fi.injectAll(fontList);
-
-```
-
-To run the demo, clone the repository and run `python -m SimpleHTTPServer` from the root directory, then navigate to http://localhost:8000/demo
+###[bcruddy.github.io/font-inject.js/demo](bcruddy.github.io/font-inject.js/demo)
 
 ##License
 Do whatever you want with it under the [MIT license](https://github.com/bcruddy/FontInject/LICENSE.md).
