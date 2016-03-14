@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>font-inject.js Demo</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <style>
         .blackout-2am { font-family: "Blackout 2am"; }
@@ -59,10 +59,12 @@
         fi.injectAll(fontList);
     &lt;/script&gt;
             </pre>
-            <hr />
+            <hr/>
             <h2>Lazy Loading</h2>
             <p>FontInject allows you to inject as many fonts as your users may need and only the fonts they need.</p>
-            <p>Open up the console, go to the network tab and sort requests to "Font", then click <a onclick="show('.salsa')">here</a> to reveal another example and you'll see the request is only made when its necessary.</p>
+            <p>Open up the console, go to the network tab and sort requests to "Font", then click
+                <a onclick="show('.salsa')">here</a> to reveal another example and you'll see the request is only made when its necessary.
+            </p>
             <h3 class="salsa">Salsa was lazy loaded!</h3>
         </div>
     </div>
@@ -81,7 +83,7 @@
     </div>
 </footer>
 
-<script src="/font-inject.js/dist/font-inject.js"></script>
+<script src="/dist/font-inject.js"></script>
 <script>
     var fontList = [{
         filename: 'Blackout-2am.ttf',
@@ -100,7 +102,7 @@
         family: 'Salsa'
     }];
 
-    var fontDirPath = '/font-inject.js/demo/fonts/';
+    var fontDirPath = '/demo/fonts/';
     var fi = new FontInject(fontDirPath);
 
     fi.injectAll(fontList);
