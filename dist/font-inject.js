@@ -1,3 +1,4 @@
+'use strict';
 var Font = (function () {
     function Font() {
     }
@@ -5,22 +6,19 @@ var Font = (function () {
 }());
 var FontInject = (function () {
     function FontInject(fontDirPath) {
+        if (fontDirPath === void 0) { fontDirPath = './'; }
         this.stylesheet = null;
-        this.rootPath = null;
-        if (fontDirPath === void 0) {
-            fontDirPath = './';
-        }
-        else {
-            var lastLetter = fontDirPath.split('').pop();
-            fontDirPath += lastLetter === '/' ? '' : '/';
-        }
+        var lastLetter = fontDirPath.split('').pop();
+        fontDirPath += lastLetter === '/' ? '' : '/';
         this.rootPath = fontDirPath;
+        return this;
     }
     FontInject.prototype.injectAll = function (fonts) {
         if (this.stylesheet === null) {
             this.stylesheet = FontInject.generateStyleSheet();
         }
         fonts.forEach(this.insertFont.bind(this));
+        return this;
     };
     FontInject.prototype.insertFont = function (font) {
         var rule = this.getFontRule(font);
