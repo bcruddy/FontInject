@@ -1,6 +1,7 @@
 'use strict';
 var Font = (function () {
     function Font() {
+        this.weight = 400;
     }
     return Font;
 }());
@@ -26,7 +27,7 @@ var FontInject = (function () {
     };
     FontInject.prototype.getFontRule = function (font) {
         var fontPath = this.rootPath + font.filename;
-        return '@font-face { src: url(' + fontPath + '); font-family: "' + font.family + '"; }';
+        return '@font-face { src: url(' + fontPath + '); font-family: "' + font.family + '"; font-weight: ' + font.weight + ' }';
     };
     FontInject.generateStyleSheet = function () {
         var style = document.createElement('style');
