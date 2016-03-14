@@ -40,33 +40,27 @@
     &lt;script src="/path/to/font-inject.js"&gt;&lt;/script&gt;
     &lt;script&gt;
       var fontList = [{
-        filename: 'Blackout-2am.ttf',
-        family: 'Blackout 2am',
-        weight: 400
-      }, {
-        filename: 'Butcherman-Regular.ttf',
-        family: 'Butcherman',
-        weight: 400
-      }, {
-        filename: 'Cookie-Regular.ttf',
-        family: 'Cookie',
-        weight: 400
-      }, {
-        filename: 'Salsa-Regular.ttf',
-        family: 'Salsa',
-        weight: 400
-      }];
+          filename: 'Blackout-2am.ttf',
+          family: 'Blackout 2am',
+          weight: 400
+        }, {
+          filename: 'Butcherman-Regular.ttf',
+          family: 'Butcherman',
+          weight: 400
+        }, {
+          filename: 'Cookie-Regular.ttf',
+          family: 'Cookie',
+          weight: 400
+        }, {
+          filename: 'Salsa-Regular.ttf',
+          family: 'Salsa',
+          weight: 400
+        }];
 
       var fontDirPath = '/fonts/';
       var fi = new FontInject(fontDirPath);
 
       fi.injectAll(fontList);
-
-
-      function show(selector) {
-        var el = document.querySelector(selector);
-        el.style.display = el.style.display == 'block' ? 'none' : 'block';
-      }
     &lt;/script&gt;
             </pre>
       <hr/>
@@ -120,10 +114,9 @@
 
   fi.injectAll(fontList);
 
-
   function show(selector) {
     var el = document.querySelector(selector);
-    el.style.display = el.style.display === 'none' ? 'list-item' : 'none';
+    el.style.display = el.style.display == 'block' ? 'none' : 'block';
   }
 </script>
 </body>
