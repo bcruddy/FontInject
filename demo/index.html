@@ -34,6 +34,29 @@
             </ul>
         </div>
         <div class="col-md-8">
+            <h2>Basic Usage</h2>
+            <pre>
+            var fontList = [{
+                filename: 'Blackout-2am.ttf',
+                family: 'Blackout 2am'
+            }, {
+                filename: 'Butcherman-Regular.ttf',
+                family: 'Butcherman'
+            }, {
+                filename: 'Cookie-Regular.ttf',
+                family: 'Cookie'
+            }, {
+                filename: 'Dorsa-Regular.ttf',
+                family: 'Dorsa'
+            }, {
+                filename: 'Salsa-Regular.ttf',
+                family: 'Salsa'
+            }];
+
+            var fi = new FontInject('/path/to/fonts/');
+            fi.injectAll(fontList);
+            </pre>
+            <hr />
             <h2>Lazy Loading</h2>
             <p>FontInject allows you to inject as many fonts as your users may need and only the fonts they need.</p>
             <p>Open up the console, go to the network tab and sort requests to "Font", then click <a onclick="show('.salsa')">here</a> to reveal another example and you'll see the request is only made when its necessary.</p>
@@ -42,7 +65,7 @@
     </div>
 </div>
 
-<footer class="container-fluid" style="background-color: #CCC; position: fixed; bottom: 0; left: 0; right: 0; padding-top: 20px; padding-bottom: 20px;">
+<footer class="container-fluid" style="background-color: #CCC; margin-top: 50px; padding-top: 20px; padding-bottom: 20px;">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
