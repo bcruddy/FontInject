@@ -1,7 +1,7 @@
 #font-inject.js
 With font-inject.js you can allow your users to access hundreds of different fonts on demand without preloading all of them.
 
-###[bcruddy.github.io/font-inject.js/demo](bcruddy.github.io/font-inject.js/demo)
+###[https://bcruddy.github.io/font-inject.js/demo/](https://bcruddy.github.io/font-inject.js/demo/)
 
 ##License
 Do whatever you want with it under the [MIT license](https://github.com/bcruddy/FontInject/LICENSE.md).
