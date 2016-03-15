@@ -3,10 +3,11 @@
     "noImplicitAny": true,
     "removeComments": true,
     "preserveConstEnums": true,
-    "out": "./dist/font-inject.js",
+    "out": "dist/font-inject.js",
     "sourceMap": true
   },
   "files": [
-    "./src/font-inject.ts"
+    "src/font-inject.ts",
+    "src/font.ts"
   ]
 }

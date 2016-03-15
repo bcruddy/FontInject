@@ -1,16 +1,7 @@
 // https://github.com/bcruddy/FontInject
 // brian at ruddy dot io | @bcruddy
 
-'use strict';
-
-class Font {
-  family:string;
-  filename:string;
-  weight:number = 400;
-}
-
 class FontInject {
-
   stylesheet:CSSStyleSheet = null;
   rootPath:string;
 
