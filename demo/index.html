@@ -39,28 +39,17 @@
             <pre>
     &lt;script src="/path/to/font-inject.js"&gt;&lt;/script&gt;
     &lt;script&gt;
-      var fontList = [{
-        filename: 'Blackout-2am.ttf',
-        family: 'Blackout 2am',
-        weight: 400
-      }, {
-        filename: 'Butcherman-Regular.ttf',
-        family: 'Butcherman',
-        weight: 400
-      }, {
-        filename: 'Cookie-Regular.ttf',
-        family: 'Cookie',
-        weight: 400
-      }, {
-        filename: 'Salsa-Regular.ttf',
-        family: 'Salsa',
-        weight: 400
-      }];
+        var fontDirPath = '/demo/fonts/';
+        var fi = new FontInject(fontDirPath);
 
-      var fontDirPath = '/demo/fonts/';
-      var fi = new FontInject(fontDirPath);
+        var fontList = [
+          new Font('Blackout 2am', 'Blackout-2am.ttf', 400),
+          new Font('Butcherman', 'Butcherman-Regular.ttf', 400),
+          new Font('Cookie', 'Cookie-Regular.ttf', 400),
+          new Font('Salsa', 'Salsa-Regular.ttf', 400)
+        ];
 
-      fi.injectAll(fontList);
+        fi.injectAll(fontList);
     &lt;/script&gt;
             </pre>
       <hr/>
@@ -89,28 +78,17 @@
   </div>
 </footer>
 
-<script src="/dist/font-inject.js"></script>
+<script src="/dist/font-inject.min.js"></script>
 <script>
-  var fontList = [{
-    filename: 'Blackout-2am.ttf',
-    family: 'Blackout 2am',
-    weight: 400
-  }, {
-    filename: 'Butcherman-Regular.ttf',
-    family: 'Butcherman',
-    weight: 400
-  }, {
-    filename: 'Cookie-Regular.ttf',
-    family: 'Cookie',
-    weight: 400
-  }, {
-    filename: 'Salsa-Regular.ttf',
-    family: 'Salsa',
-    weight: 400
-  }];
-
   var fontDirPath = '/demo/fonts/';
   var fi = new FontInject(fontDirPath);
+
+  var fontList = [
+    new Font('Blackout 2am', 'Blackout-2am.ttf', 400),
+    new Font('Butcherman', 'Butcherman-Regular.ttf', 400),
+    new Font('Cookie', 'Cookie-Regular.ttf', 400),
+    new Font('Salsa', 'Salsa-Regular.ttf', 400)
+  ];
 
   fi.injectAll(fontList);
 

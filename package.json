@@ -1,0 +1,30 @@
+{
+  "name": "font-inject.js",
+  "version": "0.2.1",
+  "description": "light weight tool for injecting fonts into the browser without blocking other requests",
+  "main": "src/font-inject.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc && uglifyjs -o dist/font-inject.min.js dist/font-inject.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bcruddy/font-inject.js.git"
+  },
+  "keywords": [
+    "javascript",
+    "typescript",
+    "fonts",
+    "web",
+    "fonts"
+  ],
+  "author": "brian [at] ruddy [dot] io, @bcruddy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bcruddy/font-inject.js/issues"
+  },
+  "homepage": "https://bcruddy.github.io/font-inject.js",
+  "devDependencies": {
+    "uglify-js": "^1.3.5"
+  }
+}

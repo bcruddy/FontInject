@@ -1,10 +1,3 @@
-'use strict';
-var Font = (function () {
-    function Font() {
-        this.weight = 400;
-    }
-    return Font;
-}());
 var FontInject = (function () {
     function FontInject(fontDirPath) {
         if (fontDirPath === void 0) { fontDirPath = './'; }
@@ -36,5 +29,14 @@ var FontInject = (function () {
         return style.sheet;
     };
     return FontInject;
+}());
+var Font = (function () {
+    function Font(family, filename, weight) {
+        if (weight === void 0) { weight = 400; }
+        this.family = family;
+        this.filename = filename;
+        this.weight = weight;
+    }
+    return Font;
 }());
 //# sourceMappingURL=font-inject.js.map
