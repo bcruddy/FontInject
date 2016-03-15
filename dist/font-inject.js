@@ -2,8 +2,10 @@ var FontInject = (function () {
     function FontInject(fontDirPath) {
         if (fontDirPath === void 0) { fontDirPath = './'; }
         this.stylesheet = null;
-        var lastLetter = fontDirPath.split('').pop();
-        fontDirPath += lastLetter === '/' ? '' : '/';
+        var isLastCharSlash = fontDirPath.slice(-1) === '/';
+        if (!isLastCharSlash) {
+            fontDirPath += '/';
+        }
         this.rootPath = fontDirPath;
         return this;
     }

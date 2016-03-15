@@ -6,8 +6,10 @@ class FontInject {
   rootPath:string;
 
   constructor(fontDirPath:string = './') {
-    let lastLetter = fontDirPath.split('').pop();
-    fontDirPath += lastLetter === '/' ? '' : '/';
+    let isLastCharSlash = fontDirPath.slice(-1) === '/';
+    if (!isLastCharSlash) {
+      fontDirPath += '/';
+    }
 
     this.rootPath = fontDirPath;
 

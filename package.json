@@ -1,6 +1,6 @@
 {
   "name": "font-inject.js",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "light weight tool for injecting fonts into the browser without blocking other requests",
   "main": "src/font-inject.ts",
   "scripts": {
