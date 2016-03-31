@@ -1,0 +1,26 @@
+{
+  "name": "font-inject.js",
+  "description": "light weight tool for injecting fonts into the browser without blocking other requests",
+  "main": "dist/font-inject.js",
+  "version": "0.2.2",
+  "authors": [
+    "brian [at] ruddy [dot] io",
+    "@bcruddy"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "javascript",
+    "typescript",
+    "fonts",
+    "web"
+  ],
+  "homepage": "https://github.com/bcruddy/font-inject.js",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
