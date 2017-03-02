@@ -1,6 +1,3 @@
-// https://github.com/bcruddy/FontInject
-// brian at ruddy dot io | @bcruddy
-
 class Font {
   family: string;
   filename: string;

@@ -1,12 +1,10 @@
-// https://github.com/bcruddy/FontInject
-// brian at ruddy dot io | @bcruddy
-
 class FontInject {
   stylesheet: CSSStyleSheet = null;
   rootPath: string;
 
   constructor(fontDirPath: string = './') {
     let isLastCharSlash = fontDirPath.slice(-1) === '/';
+
     if (!isLastCharSlash) {
       fontDirPath += '/';
     }

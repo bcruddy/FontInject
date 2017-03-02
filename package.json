@@ -2,6 +2,7 @@
   "name": "font-inject.js",
   "version": "0.2.2",
   "description": "light weight tool for injecting fonts into the browser without blocking other requests",
+  "entry": "dist/font-inject.min.js",
   "main": "src/font-inject.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -19,7 +20,7 @@
     "web",
     "fonts"
   ],
-  "author": "brian [at] ruddy [dot] io, @bcruddy",
+  "author": "@bcruddy",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/bcruddy/font-inject.js/issues"

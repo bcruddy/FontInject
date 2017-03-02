@@ -4,7 +4,6 @@
   "main": "dist/font-inject.js",
   "version": "0.2.2",
   "authors": [
-    "brian [at] ruddy [dot] io",
     "@bcruddy"
   ],
   "license": "MIT",
