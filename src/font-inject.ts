@@ -32,7 +32,11 @@ class FontInject {
   getFontRule(font: Font): string {
     let fontPath = this.rootPath + font.filename;
 
-    return '@font-face { src: url(' + fontPath + '); font-family: "' + font.family + '"; font-weight: ' + font.weight + ' }';
+    return `@font-face {
+            src: url(${fontPath});
+            font-family: "${font.family}";
+            font-weight: ${font.weight};
+        }`;
   }
 
   static generateStyleSheet(): CSSStyleSheet {
@@ -45,4 +49,3 @@ class FontInject {
   }
 
 }
-

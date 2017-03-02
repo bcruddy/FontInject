@@ -22,7 +22,7 @@ var FontInject = (function () {
     };
     FontInject.prototype.getFontRule = function (font) {
         var fontPath = this.rootPath + font.filename;
-        return '@font-face { src: url(' + fontPath + '); font-family: "' + font.family + '"; font-weight: ' + font.weight + ' }';
+        return "@font-face {\n            src: url(" + fontPath + ");\n            font-family: \"" + font.family + "\";\n            font-weight: " + font.weight + ";\n        }";
     };
     FontInject.generateStyleSheet = function () {
         var style = document.createElement('style');
