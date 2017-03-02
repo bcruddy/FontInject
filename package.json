@@ -5,7 +5,8 @@
   "main": "src/font-inject.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc && uglifyjs -o dist/font-inject.min.js dist/font-inject.js"
+    "build": "tsc && uglifyjs -o dist/font-inject.min.js dist/font-inject.js",
+    "pages": "cp dist/font-inject.min.js docs/font-inject.min.js"
   },
   "repository": {
     "type": "git",
